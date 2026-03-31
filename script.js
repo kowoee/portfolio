@@ -149,7 +149,6 @@ document.querySelectorAll('.gallery-item').forEach(item => {
     lightbox.classList.add('open');
   });
 });
-document.getElementById('lightbox-close').addEventListener('click', () => lightbox.classList.remove('open'));
 lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.classList.remove('open'); });
 
 
