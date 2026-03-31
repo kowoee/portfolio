@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaique Ribeiro — Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="cursor"></div>
+  <div class="notebook-bg"></div>
+  <canvas id="noise-bg"></canvas>
+
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#sobre"       class="nav-item">sobre</a></li>
+        <li><a href="#habilidades" class="nav-item">skills</a></li>
+        <li><a href="#projetos"    class="nav-item">projetos</a></li>
+        <li><a href="#galeria"     class="nav-item">galeria</a></li>
+        <li><a href="#mural"       class="nav-item">mural</a></li>
+        <li><a href="#contato"     class="nav-item">contato</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-btn" title="alternar tema">☀️</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section id="hero">
+      <div class="hero-content">
+        <div class="hero-label">
+          <span class="label-text" style="font-size: 50px">esse sou eu :)</span>
+          <svg class="arrow-down" viewBox="0 0 24 30" fill="none">
+            <path d="M12 0 Q12 20 12 28 M6 22 L12 30 L18 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h1 class="hero-name">
+          <span id="typed-name"></span><span class="cursor-blink">|</span>
+        </h1>
+        <div class="avatar-wrapper">
+          <div class="avatar-frame">
+            <img src="assets/foto.jpg" alt="Kaique Ribeiro" class="avatar-foto" />
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <span>role pra baixo</span>
+        <div class="scroll-arrow">↓</div>
+      </div>
+    </section>
+
+    <!-- ========== SOBRE ========== -->
+    <section id="sobre" class="section-card">
+      <div class="section-tape tape-red"></div>
+      <h2 class="section-title">sobre mim</h2>
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <p>Oi! Meu nome é <strong>Kaique</strong>,  tô estudando Engenharia de Computação na <strong>UNIFEV</strong> e sou técnico em Mecatrônica pelo <strong>IFSP</strong>!</p>
+          <p>Me interesso por <strong>automação</strong>, <strong>robótica</strong>, <strong>criação de jogos</strong> e <strong>arte/modelagem 3D</strong>.</p>
+          <p>Esse portfólio é meu primeiro projeto web.</p>
+        </div>
+        <div class="interests-grid">
+          <div class="postit yellow"> Automação</div>
+          <div class="postit blue"> Robótica</div>
+          <div class="postit green"> Game Dev</div>
+          <div class="postit pink"> Mecatrônica</div>
+          <div class="postit blue"> Arte Digital</div>
+          <div class="postit yellow"> Modelagem 3D</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== HABILIDADES ========== -->
+    <section id="habilidades" class="section-card">
+      <div class="section-tape tape-blue"></div>
+      <h2 class="section-title">skills <small style="font-size: 20px; color:rgb(173, 173, 173) ">(tá meio baixo...)</small></h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-name">Python</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill:10%"></div></div>
+        </div>
+        <div class="skill-card">
+      
+          <div class="skill-name">C</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill:25%"></div></div>
+        </div>
+        <div class="skill-card">
+    
+          <div class="skill-name">HTML</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill:10%"></div></div>
+        </div>
+        <div class="skill-card">
+   
+          <div class="skill-name">CSS</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill:10%"></div></div>
+        </div>
+        <div class="skill-card">
+     
+          <div class="skill-name">Arduino</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill:25%"></div></div>
+        </div>
+        <div class="skill-card">
+         
+          <div class="skill-name">G-Code</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill:20%"></div></div>
+        </div>
+        <div class="skill-card">
+       
+          <div class="skill-name">Modelagem 3D</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill:15%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJETOS ========== -->
+    <section id="projetos" class="section-card">
+      <div class="section-tape tape-yellow"></div>
+      <h2 class="section-title">projetos</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+        
+          <h3>Portfólio</h3>
+          <p>Meu primeiro site, gostou?</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+          </div>
+          <a href="https://github.com/kowoee/portfolio" target="_blank" class="project-link">ver no github →</a>
+        </div>
+        <div class="project-card project-blank">
+        
+          <h3>Em breve...</h3>
+          <p>Vou ver se faço mais projetos!</p>
+          <div class="project-tags"><span class="tag">???</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+    <section id="galeria" class="section-card">
+      <div class="section-tape tape-red"></div>
+      <h2 class="section-title">galeria</h2>
+      <p class="section-sub">Arte digital e modelagem 3D</p>
+      <div class="gallery-grid">
+        <div class="gallery-item" style="--rot:-2deg" data-caption="obra 1 ">
+          <img src="assets/art1.jpg" alt="Arte 1" />
+          <span class="gallery-caption">obra 1 </span>
+        </div>
+        <div class="gallery-item" style="--rot:1.5deg" data-caption="obra 2 ">
+          <img src="assets/art2.jpg" alt="Arte 2" />
+          <span class="gallery-caption">obra 2 </span>
+        </div>
+        <div class="gallery-item" style="--rot:-1deg" data-caption="obra 3 ">
+          <img src="assets/art3.jpg" alt="Arte 3" />
+          <span class="gallery-caption">obra 3 </span>
+        </div>
+        <div class="gallery-item" style="--rot:2deg" data-caption="obra 4 ">
+          <img src="assets/art4.jpg" alt="Arte 4" />
+          <span class="gallery-caption">obra 4 </span>
+        </div>
+      </div>
+      <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close">✕</button>
+        <img id="lightbox-img" src="" alt="" />
+        <span id="lightbox-caption"></span>
+      </div>
+    </section>
+ ========== galeria de artes, sem nenhuma pra mostrar entao vou deixar anotado ========== -->]
+
+    <!-- ========== MURAL ========== -->
+    <section id="mural" class="section-card">
+      <div class="section-tape tape-green"></div>
+      <h2 class="section-title">mural de visitantes </h2>
+      <p class="section-sub">Desenha, deixa mensagem, coloca seu nome se quiser.fica salvo por uns 30 dias e todo mundo que entrar consegue ver.</p>
+
+      <!-- ÁREA DE DESENHO -->
+      <div class="draw-area" id="draw-area">
+        <h3 class="draw-label">sua tela </h3>
+
+        <!-- Controles -->
+        <div class="canvas-controls">
+          <div class="color-picker-group">
+            <span>cor:</span>
+            <button class="color-btn active" style="--c:#1a1a2e" data-color="#1a1a2e"></button>
+            <button class="color-btn" style="--c:#e84545" data-color="#e84545"></button>
+            <button class="color-btn" style="--c:#4a90d9" data-color="#4a90d9"></button>
+            <button class="color-btn" style="--c:#27ae60" data-color="#27ae60"></button>
+            <button class="color-btn" style="--c:#f39c12" data-color="#f39c12"></button>
+            <button class="color-btn" style="--c:#9b59b6" data-color="#9b59b6"></button>
+            <button class="color-btn" style="--c:#ffffff" data-color="#ffffff" title="branco"></button>
+            <input type="color" id="color-free" value="#1a1a2e" title="cor livre" />
+          </div>
+          <div class="size-group">
+            <span>tamanho:</span>
+            <input type="range" id="brush-size" min="2" max="30" value="4" />
+            <span id="brush-preview">●</span>
+          </div>
+          <button class="canvas-btn" id="btn-eraser">🧹 borracha</button>
+          <button class="canvas-btn" id="btn-undo">↩️ desfazer</button>
+          <button class="canvas-btn danger" id="btn-reset">🗑️ limpar tudo</button>
+        </div>
+
+        <!-- Canvas de desenho -->
+        <div class="canvas-wrapper">
+          <canvas id="draw-canvas" width="860" height="480"></canvas>
+        </div>
+
+        <!-- Publicar -->
+        <div class="publish-area" id="publish-area">
+          <input type="text" id="publish-caption" placeholder="legenda do seu desenho (opcional)" maxlength="80" />
+          <input type="text" id="publish-name"    placeholder="seu nome/apelido (opcional)"       maxlength="40" />
+          <button class="canvas-btn publish-btn" id="btn-publish"> publicar no mural</button>
+        </div>
+
+        <!-- Aviso de já publicou -->
+        <div class="already-published" id="already-published" style="display:none">
+          <p>✅ Você já publicou um desenho neste mês! Volte em 30 dias pra publicar de novo.</p>
+          <button class="canvas-btn danger" id="btn-reset-published">quero publicar de novo (apaga o anterior)</button>
+        </div>
+      </div>
+
+      <!-- GALERIA PÚBLICA DE DESENHOS -->
+      <div class="public-gallery-header">
+        <h3 class="draw-label">desenhos dos visitantes</h3>
+        <span class="gallery-count">(<span id="drawing-count">0</span> publicados)</span>
+      </div>
+
+      <div class="public-gallery" id="public-gallery">
+        <div class="gallery-empty" id="gallery-empty">nenhum desenho ainda :( </div>
+      </div>
+
+      <!-- Lightbox dos desenhos do mural -->
+      <div class="lightbox" id="mural-lightbox">
+        <button class="lightbox-close" id="mural-lightbox-close">✕</button>
+        <img id="mural-lightbox-img" src="" alt="" />
+        <div class="mural-lightbox-info">
+          <span id="mural-lightbox-caption"></span>
+          <span id="mural-lightbox-author"></span>
+          <span id="mural-lightbox-date"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTATO ========== -->
+    <section id="contato" class="section-card">
+      <div class="section-tape tape-green"></div>
+      <h2 class="section-title">contato</h2>
+      <p class="contato-sub">Só chamar ;)</p>
+      <div class="contato-links">
+        <a href="https://www.linkedin.com/in/kaique-ribeiro-4920272b3" target="_blank" class="contato-card">
+          
+          <span class="contato-label">LinkedIn</span>
+          <span class="contato-arrow">→</span>
+        </a>
+        <a href="https://github.com/kowoee" target="_blank" class="contato-card">
+          
+          <span class="contato-label">GitHub</span>
+          <span class="contato-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>feito por <strong>Kaique Ribeiro Donegar</strong> </p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
